@@ -14,6 +14,7 @@ else:
 
 st.subheader("Telemetry Data")
 st.dataframe(data)
+
 st.subheader("Mission Metrics")
 
 col1, col2, col3 = st.columns(3)
@@ -21,3 +22,9 @@ col1, col2, col3 = st.columns(3)
 col1.metric("Max Depth", data["depth"].max())
 col2.metric("Min Altitude", data["altitude"].min())
 col3.metric("Max Temperature", data["temperature"].max())
+
+st.subheader("Depth Profile")
+st.line_chart(data["depth"])
+
+st.subheader("Temperature Variation")
+st.line_chart(data["temperature"])
