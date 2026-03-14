@@ -36,3 +36,7 @@ rov-telemetry-dashboard/
 
 pip install -r requirements.txt
 streamlit run app.py
+
+## Dashboard Preview
+
+![ROV Dashboard](dashboard.png)
