@@ -2,29 +2,37 @@
 
 Interactive dashboard for visualizing ROV mission telemetry data using Python and Streamlit.
 
+## Overview
+
+This project provides a telemetry dashboard designed for subsea vehicle operations.  
+It enables visualization and monitoring of mission parameters such as depth, altitude, and temperature.
+
 ## Features
 
-- Visualize ROV depth over time
-- Monitor altitude and temperature
-- Analyze mission telemetry data
+- Mission telemetry visualization
+- Depth profile monitoring
+- Altitude tracking
+- Temperature analysis
+- Engineering data dashboard
 
-## Technologies
+## Technology Stack
 
 - Python
 - Streamlit
 - Pandas
 - Plotly
 
-## Dataset
+## Project Structure
 
-Simulated ROV mission telemetry data including:
+rov-telemetry-dashboard/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+├── data/
+│   └── rov_mission_data.csv
 
-- Depth
-- Altitude
-- Temperature
-- Heading
-
-## How to Run
+## Run Locally
 
 pip install -r requirements.txt
 streamlit run app.py
