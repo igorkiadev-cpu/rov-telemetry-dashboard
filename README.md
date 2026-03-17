@@ -1,114 +1,168 @@
 # ROV Telemetry Dashboard
 
-Interactive dashboard for real-time visualization of ROV (Remotely Operated Vehicle) telemetry data, designed to support subsea operations and engineering analysis.
+Interactive dashboard for real-time visualization of ROV (Remotely Operated Vehicle) telemetry data, designed to support subsea operations, mission monitoring, and engineering analysis.
+
+Built for engineers and operators who need to quickly interpret large volumes of subsea telemetry during offshore missions.
 
 ---
 
-## 🧠 Problem
+## Overview
 
-ROV operations generate large volumes of telemetry data (depth, altitude, temperature) that are difficult to interpret quickly during missions.
+ROV missions generate continuous streams of telemetry such as:
+
+- Depth
+- Altitude
+- Temperature
+- Time-series operational data
+
+Interpreting this raw data quickly during subsea operations can be challenging. This project converts raw telemetry into clear, interactive engineering visualizations.
 
 ---
 
-## 💡 Solution
+## Problem
 
-This dashboard transforms raw telemetry data into clear, interactive visualizations, enabling faster decision-making in subsea operations.
+ROV operations produce large volumes of telemetry data that are difficult to interpret quickly during missions.
+
+Operators often need to monitor:
+
+- Vehicle depth
+- Distance to seabed
+- Environmental conditions
+- Mission behavior over time
+
+Without proper visualization, decision-making becomes slower and more error-prone.
 
 ---
 
-## ⚙️ Features
+## Solution
+
+This dashboard transforms raw telemetry data into interactive charts and engineering insights, enabling faster interpretation during subsea missions.
+
+Key capabilities include:
 
 - Real-time telemetry visualization
 - Depth profile monitoring
-- Altitude tracking
-- Temperature analysis
-- Interactive engineering dashboard
+- Altitude tracking relative to seabed
+- Temperature trend analysis
+- Interactive mission dashboard
 
 ---
 
-## 🖥️ Demo
+## Dashboard Preview
 
-![Dashboard Screenshot](./assets/dashboard.png)
-
-*(Add a real screenshot here — this is critical)*
+![ROV Telemetry Dashboard](images/dashboard.png)
 
 ---
 
-## 🧰 Tech Stack
+## Project Structure
 
-- Python
-- Streamlit
-- Pandas
-- Plotly
-
----
-
-## 📂 Project Structure
-
-
-rov-telemetry-dashboard/
+rov-telemetry-dashboard
 │
 ├── app.py
 ├── requirements.txt
 ├── README.md
-├── data/
-│   └── rov_mission_data.csv
-
+├── images
+│   └── dashboard.png
+└── data
+    └── rov_mission_data.csv
 
 ---
 
-## ▶️ Run Locally
+## Features
 
-```bash
-git clone https://github.com/igorkiadev-cpu/rov-telemetry-dashboard.git
-cd rov-telemetry-dashboard
-pip install -r requirements.txt
-streamlit run app.py
+- Interactive telemetry visualization
+- Time-series depth monitoring
+- Altitude tracking
+- Temperature analysis
+- Engineering dashboard interface
+- Fast data exploration for subsea missions
 
-## Dashboard Preview
-![ROV Telemetry Dashboard](ROV Telemetry Dashboard
+---
 
-Interactive dashboard for real-time visualization of ROV (Remotely Operated Vehicle) telemetry data, designed to support subsea operations and engineering analysis.
+## Tech Stack
 
-🧠 Problem
+- Python
+- Pandas
+- Streamlit
+- Plotly
 
-ROV operations generate large volumes of telemetry data (depth, altitude, temperature) that are difficult to interpret quickly during missions.
+These tools allow rapid development of interactive engineering dashboards for operational data analysis.
 
-💡 Solution
+---
 
-This dashboard transforms raw telemetry data into clear, interactive visualizations, enabling faster decision-making in subsea operations.
+## Dataset
 
-⚙️ Features
+Example telemetry dataset includes:
 
-Real-time telemetry visualization
-Depth profile monitoring
-Altitude tracking
-Temperature analysis
-Interactive engineering dashboard
-🖥️ Demo
+- Timestamp
+- Depth
+- Altitude
+- Temperature
 
-Dashboard Screenshot
+Sample file:
 
-(Add a real screenshot here — this is critical)
+data/rov_mission_data.csv
 
-🧰 Tech Stack
+---
 
-Python
-Streamlit
-Pandas
-Plotly
-📂 Project Structure
+## Installation
 
-rov-telemetry-dashboard/ │ ├── app.py ├── requirements.txt ├── README.md ├── data/ │ └── rov_mission_data.csv
-
-▶️ Run Locally
+Clone the repository:
 
 git clone https://github.com/igorkiadev-cpu/rov-telemetry-dashboard.git
+
+Navigate into the project:
+
 cd rov-telemetry-dashboard
+
+Install dependencies:
+
 pip install -r requirements.txt
+
+Run the dashboard:
+
 streamlit run app.py
 
-## Dashboard Preview
-![ROV Telemetry Dashboard](telemetry-dashboard.png.png)
-![ROV Telemetry Dashboard](A1DBB645-AD66-474C-872B-A5687B2C4867.png))
-![ROV Telemetry Dashboard](A1DBB645-AD66-474C-872B-A5687B2C4867.png)
+---
+
+## Example Use Cases
+
+This tool can support:
+
+- ROV mission monitoring
+- Subsea inspection analysis
+- Engineering telemetry review
+- Offshore operations training
+- Data visualization for subsea robotics
+
+---
+
+## Future Improvements
+
+- Live telemetry streaming
+- Additional sensor integration
+- Mission anomaly detection
+- 3D subsea mission visualization
+- Cloud deployment
+
+---
+
+## Author
+
+Igor Carvalho
+
+Subsea operations professional transitioning into Data Engineering and Scientific Visualization, with experience in:
+
+- ROV operations
+- Subsea inspection
+- Engineering data analysis
+- Python data visualization
+
+GitHub  
+https://github.com/igorkiadev-cpu
+
+---
+
+## License
+
+This project is open source and available under the MIT License.
