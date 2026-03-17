@@ -50,7 +50,7 @@ Key capabilities include:
 
 ## Dashboard Preview
 
-![ROV Telemetry Dashboard](images/dashboard.png)
+![ROV Telemetry Dashboard](IMG_1523.jpeg)
 
 ---
 
