@@ -38,5 +38,5 @@ pip install -r requirements.txt
 streamlit run app.py
 
 ## Dashboard Preview
-
+![ROV Telemetry Dashboard](images/telemetry-dashboard.png)
 ![ROV Telemetry Dashboard](A1DBB645-AD66-474C-872B-A5687B2C4867.png)
