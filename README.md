@@ -39,4 +39,4 @@ streamlit run app.py
 
 ## Dashboard Preview
 
-![ROV Dashboard](A1DBB645-AD66-474C-872B-A5687B2C4867.png)
+![ROV Telemetry Dashboard](images/dashboard.png)
