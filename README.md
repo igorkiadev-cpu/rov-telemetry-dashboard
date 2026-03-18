@@ -1,5 +1,10 @@
+## 🧠 What This Solves
+
+This tool helps offshore engineers quickly interpret telemetry data,
+reducing decision time and improving operational safety.
+
 ## 🚀 Live Demo
-🔗 https://rov-telemetry-dashboard.streamlit.app
+👉 https://rov-telemetry-dashboard.streamlit.app
 
 ## 📊 Features
 - Real-time telemetry visualization
@@ -156,11 +161,25 @@ This tool can support:
 
 ---
 
+## 💼 Work With Me
+
+If you need:
+- Data dashboards
+- Web scraping
+- Automation scripts
+- Data analysis tools
+
+Feel free to reach out.
+
+I can build custom solutions tailored to your data and business needs.
+
+---
+
 ## Author
 
 Igor Carvalho
 
-Subsea operations professional transitioning into Data Engineering and Scientific Visualization, with experience in:
+Software Developer focused on Data Engineering and Scientific Visualization
 
 - ROV operations
 - Subsea inspection
