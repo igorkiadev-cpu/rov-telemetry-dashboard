@@ -8,7 +8,7 @@ reducing decision time and improving operational safety.
 
 # ROV Mission Intelligence Platform
 
-![ROV Telemetry Dashboard Demo](./images/rov-telemetry-dashboard-demo.gif)
+![ROV Telemetry Dashboard Demo](rov-telemetry-dashboard-demo.gif.mov)
 
 > Interactive data intelligence tool for offshore ROV operations
 
