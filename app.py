@@ -1,4 +1,17 @@
 import streamlit as st
+
+st.set_page_config(page_title="ROV Mission Intelligence", layout="wide")
+
+st.title("ROV Mission Intelligence Dashboard")
+
+st.markdown("""
+Analyze ROV telemetry data to extract operational insights, monitor depth profiles,
+and improve subsea mission performance.
+""")
+
+st.info("Upload your mission data or use the sample dataset to explore insights.")
+
+import streamlit as st
 import pandas as pd
 
 st.title("ROV Telemetry Dashboard")
