@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import os
 
 # ======================
 # CONFIG
@@ -25,10 +26,22 @@ st.info("Upload your mission data or use the sample dataset.")
 # ======================
 uploaded_file = st.file_uploader("Upload ROV Telemetry CSV", type=["csv"])
 
+# Caminho padrão (tenta encontrar o CSV em raiz ou na pasta data/)
+default_csv_paths = ["rov_mission_data.csv", "data/rov_mission_data.csv"]
+
 if uploaded_file:
     df = pd.read_csv(uploaded_file)
 else:
-    df = pd.read_csv("rov_mission_data.csv")
+    # procura o CSV padrão
+    csv_found = False
+    for path in default_csv_paths:
+        if os.path.exists(path):
+            df = pd.read_csv(path)
+            csv_found = True
+            break
+    if not csv_found:
+        st.error("❌ CSV padrão não encontrado! Faça upload do arquivo.")
+        st.stop()
 
 # ======================
 # FILTER
@@ -66,7 +79,6 @@ if filtered_df["depth"].max() > 100:
 # INSIGHTS
 # ======================
 st.subheader("Operational Insights")
-
 st.write(f"""
 - Maximum depth reached: {filtered_df['depth'].max():.1f} m  
 - Average altitude: {filtered_df['altitude'].mean():.1f} m  
