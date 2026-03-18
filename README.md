@@ -7,6 +7,9 @@ reducing decision time and improving operational safety.
 👉 https://rov-telemetry-dashboard.streamlit.app
 
 # ROV Mission Intelligence Platform
+
+![ROV Telemetry Dashboard Demo](./images/rov-telemetry-dashboard-demo.gif)
+
 > Interactive data intelligence tool for offshore ROV operations
 
 Interactive dashboard for real-time visualization of ROV (Remotely Operated Vehicle) telemetry data, designed to support subsea operations, mission monitoring, and engineering analysis.
